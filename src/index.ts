@@ -25,8 +25,8 @@ const commandHandler = new CommandHandler(config.prefix);
 //////////////////////////////////////////////////////////////////
 // Discord Events: https://discord.js.org/#/docs/main/stable/class/Client?scrollTo=e-channelCreate
 
-client.on("ready", () => { console.log("Hive Greeter has started"); });
-client.on("message", (message: Message) => { commandHandler.handleMessage(message); });
+client.on("ready", () => { console.log("LiveStorm Bot on action"); });
+client.on("message", (message: Message) => { commandHandler.handleMessage(message); });    //When a message is sent from a user
 client.on("error", e => { console.error("Discord client error!", e); });
 
 client.login(DISCORD_TOKEN);
